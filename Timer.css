@@ -1,0 +1,16 @@
+
+.button0 {
+    width: auto;
+    margin: auto;
+    height: 2.75rem;
+    min-width: 6.5rem;
+    color: #ffffffcc;
+    border-radius: 4px;
+    background: #9900ff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* box-shadow: 0px 0px 12px #03030350; */
+    border-radius: 9px;
+  }
+  
