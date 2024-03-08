@@ -55,12 +55,12 @@ const Timer = ({ hr, min, sec }) => {
                 <button
                     onClick={handlePause}
                     className="mr3 green hover-red"
-                >{paused ? 'Start...' : 'Pause...!'}
+                >{paused ? 'Let\'s go...' : 'STOP...!'}
                 </button>
                 <button
                     onClick={handleReset}
                     className="mr3 red hover-green"
-                >Reset
+                >Fuck, Reset!
                 </button>
             </div>
         </>
