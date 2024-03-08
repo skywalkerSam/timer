@@ -14,6 +14,7 @@ Stardate: 12024.03.07.1047
 import React from 'react'
 import './App.css'
 import Timer from './components/Timer'
+import 'tachyons'
 
 function App() {
   return (

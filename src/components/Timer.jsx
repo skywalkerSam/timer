@@ -1,3 +1,5 @@
+// Timer.jsx
+
 import { useState, useEffect } from 'react'
 import './Timer.css'
 
@@ -6,6 +8,7 @@ const Timer = ({ hr, min, sec }) => {
     const [paused, setPaused] = useState(true);
     const [[h, m, s], setTime] = useState([hr, min, sec]);
 
+    // tick()
     const tick = () => {
         if (paused || over) {
             return;
@@ -21,16 +24,20 @@ const Timer = ({ hr, min, sec }) => {
         }
     };
 
+    // handleReset()
     const handleReset = () => {
         setTime([hr, min, sec]);
         setPaused(true);
         setOver(false);
     };
 
+    // handlePause()
     const handlePause = () => setPaused(!paused);
 
+    // fmt(), format timer values
     const fmt = (val) => val.toString().padStart(2, '0');
 
+    // timer action
     useEffect(() => {
         let ticker = setInterval(() => tick(), 1000);
         return () => {
@@ -40,10 +47,21 @@ const Timer = ({ hr, min, sec }) => {
 
     return (
         <>
-            <h1 className="countdown">{`${fmt(h)}:${fmt(m)}:${fmt(s)}`}</h1>
-            <div style={{display:"flex", alignItems:"center", justifyContent: "center" }}>
-                <button onClick={handlePause} className="button0">{paused ? 'Start' : 'Pause'}</button>
-                <button onClick={handleReset} className="button0">Reset</button>
+            <h1
+                className="countdown mr3 red hover-green"
+            >{`${fmt(h)}:${fmt(m)}:${fmt(s)}`}
+            </h1>
+            <div style={{ display: "flex", alignItems: "center", justifyContent: "center" }}>
+                <button
+                    onClick={handlePause}
+                    className="mr3 green hover-red"
+                >{paused ? 'Start...' : 'Pause...!'}
+                </button>
+                <button
+                    onClick={handleReset}
+                    className="mr3 red hover-green"
+                >Reset
+                </button>
             </div>
         </>
     );
