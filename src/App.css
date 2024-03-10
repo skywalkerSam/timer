@@ -41,3 +41,13 @@
 .read-the-docs {
   color: #888;
 } */
+
+.timer-buttons {
+  display: flex-inline;
+  margin-right: 1em;
+  /* justify-content: center; */
+  /* align-items: center; */
+  gap: 1em;
+  margin-top: 2em;
+  color: yellowgreen;
+}

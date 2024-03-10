@@ -1,9 +1,9 @@
 /* Timer.css */
 
-.countdown {
+.timer {
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: 1em;
-  font-size: 4em;
+  font-size: 3em;
 }

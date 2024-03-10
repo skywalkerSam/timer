@@ -47,19 +47,21 @@ const Timer = ({ hr, min, sec }) => {
 
     return (
         <>
-            <h1
-                className="countdown mr3 red hover-green"
-            >{`${fmt(h)}:${fmt(m)}:${fmt(s)}`}
-            </h1>
+            <div className='timer'>
+                <h1
+                    className="mr3 mt6 red hover-green">
+                    {`${fmt(h)}:${fmt(m)}:${fmt(s)}`}
+                </h1>
+            </div>
             <div style={{ display: "flex", alignItems: "center", justifyContent: "center" }}>
                 <button
                     onClick={handlePause}
-                    className="mr3 green hover-red"
+                    className="mr3 hover-red timer-buttons"
                 >{paused ? 'Let\'s go...' : 'STOP...!'}
                 </button>
                 <button
                     onClick={handleReset}
-                    className="mr3 red hover-green"
+                    className="mr3 red hover-green timer-buttons"
                 >Fuck, Reset!
                 </button>
             </div>
