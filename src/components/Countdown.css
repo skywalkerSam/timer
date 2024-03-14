@@ -1,6 +1,6 @@
-/* Timer.css */
+/* Countdown.css */
 
-.timer {
+.countdown {
   display: flex;
   flex-direction: column;
   align-items: center;

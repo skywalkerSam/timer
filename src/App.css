@@ -42,7 +42,7 @@
   color: #888;
 } */
 
-.timer-buttons {
+.countdown-buttons {
   display: flex-inline;
   margin-right: 1em;
   /* justify-content: center; */

@@ -1,2 +1,2 @@
 # Timer
-A simple timer application made with React
+A simple countdown timer application made with React.
